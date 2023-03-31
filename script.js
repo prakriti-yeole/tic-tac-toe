@@ -6,6 +6,7 @@ let msgRef = document.querySelector("#message");
 let newgameBtn = document.querySelector("#new-game");
 let restartBtn = document.querySelector("#restart");
 let wrapper = document.querySelector(".wrapper");
+let wrap = document.querySelector(".wrap");
 let winningPattern = [
   [0, 1, 2],
   [0, 3, 6],
@@ -27,6 +28,7 @@ const disableBtns = () => {
   });
   wrapper.classList.add("hide");
   popupRef.classList.remove("hide");
+   wrap.classList.add("hide");
   newgameBtn.innerText = "play again";
 };
 
